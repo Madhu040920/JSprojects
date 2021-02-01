@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Calculator app</title>
+</head>
+<body>
+  <script type="text/javascript">
+    operator = prompt("Enter the operation (+,-,*,/,%)");
+    number1 = parseInt(prompt("Enter the first number"));
+    number2 = parseInt(prompt("Enter the second number"));
+    switch(operator){
+      case '+':
+      document.write("The Sum of numbers is ",number1+number2);
+      break;
+      case '-':
+      document.write("The Difference of numbers is ",number1-number2);
+      break;
+      case '*':
+      document.write("The Multiplication of numbers is ",number1*number2);
+      break;
+      case '/':
+      document.write("The Division of numbers is ",number1/number2);
+      break;
+      case '%':
+      document.write("The Modulus of numbers is ",number1%number2);
+      break;
+    }
+  </script>
+</body>
+</html>
