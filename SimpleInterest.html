@@ -6,12 +6,33 @@
     </title>
   </head>
   <body>
-    <script type='text/javascript'>
-    principal = parseInt(prompt("Enter th principal amount:"))
-    interest = parseInt(prompt("Enter the rate of interest:"))
-    years = parseInt(prompt("Enter the total no number of years"))
-    si = (principal * interest * years) * 0.01
-    document.write("The simple interest is ", si)
-    </script>
+    <table>
+      <tbody>
+        <tr>
+          <td>Enter principal amount: <input type="text" id="principal01"> </td>
+        </tr>
+        <tr>
+          <td>Enter rate of interest: <input type="text" id="interest01"> </td>
+        </tr>
+        <tr>
+          <td>Enter the number of years: <input type="text" id="years01"> </td>
+        </tr>
+        <tr>
+          <td><button onclick= simple_interest()> Calculate SI</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="ans"></div>
   </body>
+  <script type='text/javascript'>
+    
+      function simple_interest(){
+        var principal,interest,years,si;
+        principal = document.getElementById("principal01").value;
+        interest = document.getElementById("interest01").value;
+        years = document.getElementById("years01").value;
+        si = (principal * interest * years) * 0.01;
+        document.getElementById("ans").innerHTML="The Simple interest is  "+si;
+      }
+  </script>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>
+      Bulb On & Off
+    </title>
+    <style>
+      button {
+        background-color: cadetblue;
+        border-radius: 0.25px;
+        border-color: black;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bulb On and Off</h1>
+    <p>
+      Click on the button to turn on and off the lights
+    </p>
+    <script type='text/javascript'>
+      var click = 0;
+      function bulb(click){
+        if (click === 0){
+          document.getElementById("lightimage").src = "bulb-on.jpg";
+        }
+        else {
+          document.getElementById("lightimage").src = "bulb-off.jpg";
+        }      
+      }
+    </script>
+    <img id="lightimage" src="bulb-off.jpg" alt="" width="200" height="200">
+    <p>
+        <button type="button" onclick="bulb(0)">Bulb On</button>
+        <button type="button" onclick="bulb(1)">Bulb Off</button>
+    </p>
+  </body>
+</html>
