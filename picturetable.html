@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+     <head> 
+          <title> Picture table </title>
+     </head>
+     <style>
+      #grey{
+         background-color:grey
+      }
+     </style>
+     <body>
+	  <table border="1">
+          <tbody>
+             <tr>
+		<th id="grey"> Name </th>
+		<th> pictures </th>
+             </tr>
+             <tr>
+		<td id="grey"> Dog </td>
+		<td><img id="dog" src="dogimg.jpg" alt="" width=100px height=100px onclick="dogborderchange()"></td>
+             </tr>
+             <tr>
+		<td id="grey"> Cat </td>
+		<td> <img id="cat" src="catimg.jpg" alt="" width=100px height=100px onclick="catborderchange()"></td>
+             </tr>
+          </tbody>
+	</table>
+        <script>
+		function dogborderchange(){
+                   var dogelement = document.getElementById("dog");
+                   dogelement.style.border = "3px solid red";	
+                }
+	   function catborderchange(){
+                   var catelement = document.getElementById("cat");
+                   catelement.style.border = "3px solid red";
+                }
+        </script>
+     </body>
+</html>
